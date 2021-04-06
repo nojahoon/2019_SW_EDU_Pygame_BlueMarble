@@ -4,6 +4,14 @@
 ## Summary
 Pygame을 활용한 파이썬 부루마블 제작(통신 x)
 
+## Developing Environment
+
+- pycharm
+- Pycharm Settings > Project Interpreter > python 3.7 + pygame
+<pre><code>pip install pygame</code></pre>
+
+
+
 ## Function
 
 * 월급부여
