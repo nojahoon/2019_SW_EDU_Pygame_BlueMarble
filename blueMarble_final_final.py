@@ -8,8 +8,6 @@ from pygame.locals import *
 # sourceFileDir = os.path.dirname(os.path.abspath(__file__))
 # os.chdir(sourceFileDir)
 
-# from PIL import Image
-# from PIL import ImageDraw
 BROWN=(65,0,0)
 SKYBLUE=(160,220,220)
 YELLOW1=(255,255,50)
