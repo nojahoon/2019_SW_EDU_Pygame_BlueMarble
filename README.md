@@ -1,5 +1,5 @@
 # 2019_SW_EDU_Pygame_BlueMarble
-2019 python SW중심교육
+2019 Winter PYTHON SW중심교육
 
 ## Summary
 Pygame을 활용한 파이썬 부루마블 제작(통신 x)
