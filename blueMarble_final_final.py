@@ -365,10 +365,10 @@ class F_StudentPlayer():
 def showingPlayerInfo():                                        #플레이어들의 캐릭터이름과 보유금액을 입력하는란
     # leng=len(objListCopy)
     NUM=1
-    """20210214 보유금액 정보표기 잡아보려하는중"""
+    """whiteImage를 넣어주어 간헐적으로 숫자 잘못표기되는 경우 없도록하였음"""
     whiteImage = pygame.image.load('image/WHITE.png')
     Gamepad.blit(whiteImage, (202,102))
-    """20210214 보유금액 정보표기 잡아보려하는중"""
+    """whiteImage를 넣어주어 간헐적으로 숫자 잘못표기되는 경우 없도록하였음"""
 
     for idx in range(0,4):
         Playerinfo=objListCopy[idx].character
@@ -614,18 +614,12 @@ def showStartScreen():
     fontObj = pygame.font.Font('image/CookieRun Bold.ttf', 100)
     textSurfaceObj = fontObj.render('BLUEMARBLE', True, WHITE, BLACK)
     textRectObj = textSurfaceObj.get_rect()
-    # titleFont = pygame.font.Font('C:/Users/nicen/OneDrive/바탕 화면/sw폰트/PySpaceship/NanumGothic.ttf', 100)
-    # titleSurf1 = titleFont.render('BlueMarble!', True, WHITE, DARKGREEN)
-    # titleRect1 = titleSurf1.get_rect()
-    #digree #각도 지정해주면 돌아가는 게 원래 코드
+   
     countmsg = 0
     FPS = 10
     clock = pygame.time.Clock()
     while True:
-        #Gamepad.fill(WHITE) ## 배경 색 채우기 안채워도 돌아감
-        # rotatedSurf1 = pygame.transform.rotate(titleSurf1, digree) #원래 각도에따라 돌아가는 코드, 정지된 상태로 있게끔 digree부분 0 으로 만들고, 위치 중앙으로 옮기려 했더니 튜플이라서 자리 바꿀 수 없다고 나옴, 밑에있던 텍스트부분과 완전히 같은 코드라서 가져와서 돌려보니 위치 이동 가능해짐.
-        # rotatedRect1 = rotatedSurf1.get_rect()
-        # Gamepad.blit(rotatedSurf1, rotatedRect1)
+       
         textRectObj.center = (padWidth / 2 , padHeight / 2)
         Gamepad.blit(textSurfaceObj, textRectObj)
 
@@ -720,23 +714,13 @@ def showGameOverScreen(name): # 게임종료 화면 구성하고 키가 입력�
         gameOverFontsys(name, (padWidth / 2), padHeight / 4, 100)
         gameOverFontsys('학고생은 부루마블 덕분에 결국 학교를 졸업할 수 있게 되었습니다', (padWidth / 2), padHeight / 2, 40)
 
-    # Gamepad.blit(rich)
-    # Gamepad.blit(overSurf, overRect)
-    # Gamepad.blit(storySurf, storyRect)
 
     pygame.display.update()
     pygame.time.wait(800) # 게임이 종료된 걸 판단하고 8초뒤에 다음화면으로 넘어가게끔 하는 부분
     checkForKeyPress() # clear out any key presses in the event queue
     pygame.time.wait(800)    #게임 종료화면 나오고 8초뒤에 다른 키먹게끔 하는 부분
 
-    # if name == '투기자':
-    #     CharactorSelect((padWidth // 8) * 0.02, 550, "투기자는 드디어 20년간의 존버를 끝내고 행복하게 살았답니다", BLACK, GREEN)
-    # elif name == '여행자':
-    #     CharactorSelect((padWidth // 8) * 0.02, 550, "여행자는 마블에서 얻은 돈을 가지고 즐겁게 여행을 떠났습니다", BLACK, GREEN)
-    # elif name == '선행자':
-    #     CharactorSelect((padWidth // 8) * 0.02, 550, "신을 만난 선행자는 그동안 착한 일을 한 보상을 받았습니다", BLACK, GREEN)
-    # elif name == '학고생':
-    #     CharactorSelect((padWidth // 8) * 0.02, 550, "마블로 인해서 강제로 학교를 열심히 다니게 된 학고생은 결국 졸업을 하게 되었습니다", BLACK, GREEN)
+   
 
     while True:
         if checkForKeyPress():
@@ -861,18 +845,7 @@ def putTheLandName():           #각 지역의 이름을 써준 후 황금열쇠
     pygame.draw.rect(Gamepad, BLACK, [5 * widthSize + 132, 2 * heightSize, 134, 100], thick)  # Building
     pygame.draw.rect(Gamepad, BLACK, [5 * widthSize + 132 + 134, 2 * heightSize, 134, 100], thick)  # Hotel
 
-    #
-    # textSurfaceObj = fontObj.render('출발합니다', True, BLACK, WHITE)
-    # textSurfaceObj2 = fontObj.render('홍콩', True, BLUE, WHITE)
-    # textRectObj = textSurfaceObj.get_rect()
-    # textRectObj2 = textSurfaceObj2.get_rect()
-    #
-    # textRectObj.center = (100, nameBlank+100)
-    # # textRectObj = (100,10)
-    # textRectObj2.center = (300,nameBlank+100)
-    #
-    # Gamepad.blit(textSurfaceObj, textRectObj)
-    # Gamepad.blit(textSurfaceObj2, textRectObj2)
+    
 
 
 def drawingLand():
@@ -894,10 +867,7 @@ def drawingLand():
     pygame.draw.rect(Gamepad, UNIVBLUE, [widthSize,0,widthSize, heightSize])  #15 창조관
     pygame.draw.rect(Gamepad, UNIVBLUE, [padWidth-widthSize,4*heightSize,widthSize, heightSize])  # 25 대학본부
 
-                           #실습실경로:C:/Users/nicen/python/파이썬폰트/swpic/spaceship.png                      /     #노트북경로:  C:/Windows/파이썬폰트/swpic/spaceship.png
-    # Plane = pygame.image.load('C:/Users/nicen/python/image/파이썬폰트/swpic/spaceship.png')  # 파일 경로로가서 이미지를 불러와 Plane에 저장
-    # Plane1 = pygame.image.load('C:/Users/nicen/python/image/파이썬폰트/swpic/spaceship.png')  # 파일 경로로가서 이미지를 불러와 Plane에 저장
-    # Plane1=pygame.transform.scale(Plane1,(25,25))
+   
 def SpaceWorld():
     global Gamepad, clock, car1, car2, car3, car4, plag1, plag2, plag3, plag4, buildingi1, buildingi2, buildingi3, buildingi4, buildingii1, buildingii2, buildingii3, buildingii4, buildingiii1, buildingiii2, buildingiii3, buildingiii4
     global building1Button, building2Button, building3Button, backmusic, diceSound, music, startmusic
@@ -1274,8 +1244,7 @@ def Rungame():
 
     while not iswin:
         pygame.init()
-        # if checkForKeyPress():  ## 키입력시 다음 화면으로 넘어가게끔 해주는 함수
-        # events=pygame.event.get()
+       
         alive=[]
         greenButton.draw(Gamepad)
         yesButton.draw(Gamepad)
@@ -1862,22 +1831,6 @@ def Rungame():
                             str34 = "다음턴부터 주사위 3회 더블이면 탈출!"
                             showingtext_y += nextLine
                             playerInfoInput(showingtext_x, showingtext_y, str34)
-                            #가자마자 주사위 더블 처리하지 않고 위에서 처리해야함
-                            # dice1 = random.randint(1, 6)
-                            # dice2 = random.randint(1, 6)
-                            # print(dice1, dice2)
-                            # if dice1 == dice2:
-                            #     obj.escape=0
-                            #     print("탈출 성공!")
-                            #     str35 = "탈출 성공!"
-                            #     showingtext_y += nextLine
-                            #     playerInfoInput(showingtext_x, showingtext_y, str35)
-                            # else:
-                            #     print("탈출 실패!")
-                            #     str36 = "탈출 실패!"
-                            #     showingtext_y += nextLine
-                            #     playerInfoInput(showingtext_x, showingtext_y, str36)
-                            #     obj.escape+=1
                         elif (choice == 5):  # 세금을 득템
                             print("누적된 세금 획득!!")
                             str37 = "누적된 세금 획득!!"
@@ -1913,12 +1866,11 @@ def Rungame():
                                 alive.remove(obj)
                         else:
                             print("컴퓨터가 미쳤음!")
-                        #
                         pygame.event.get()
                         search += 1
                         if search == len(alive) or search == len(alive)+1:  # 모든 플레이어의 턴이 돌면 턴 1씩 증가
                             turnpage += 1
-                            search = 0  #
+                            search = 0
 
                         judge = obj.winJudge()
                         if judge:
