@@ -3,6 +3,10 @@ import random, pygame, sys,time
 # from pygame.constants import QUIT, K_ESCAPE, KEYUP
 from pygame.locals import *
 
+## File Directory Error 발생할경우 주석해제##
+# import os
+# sourceFileDir = os.path.dirname(os.path.abspath(__file__))
+# os.chdir(sourceFileDir)
 
 # from PIL import Image
 # from PIL import ImageDraw
