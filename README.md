@@ -9,7 +9,7 @@ Pygame을 활용한 파이썬 부루마블 제작(통신 x)
 - pycharm
 - Pycharm Settings > Project Interpreter > python 3.7 + pygame
 <pre><code>pip install pygame</code></pre>
-
++) 유료음원 Universe.wav를 사용하였기에 추가적으로 음원파일을 추가해주고 해당 이름으로 변경해주어야함.
 
 
 ## Function
