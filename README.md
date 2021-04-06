@@ -2,7 +2,7 @@
 2019 python SW중심교육
 
 ## Summary
-Pygame을 활용한 파이썬 부루마블 제작
+Pygame을 활용한 파이썬 부루마블 제작(통신 x)
 
 ## Function
 
@@ -24,3 +24,26 @@ Pygame을 활용한 파이썬 부루마블 제작
 ## Need to Improvement
 자료구조를 배우기 전에 만들었고, 프로젝트 기간이 1주밖에 되지 않음.(따라서 변수들의 life cycle이라던지..고려되지 않은것들이 많음)
 더불어 pygame의 특성상 디버깅하기도 어려워서 Spaghetti code가 불가피하였음
+
+
+-----------------
+Python project : Blue Marble Game
+-----------------
+Team member : One in the Department of Korean Literature , One in the Department of Mathematics  
+During the winter vacation, we learned python with the university's software program for 3 weeks.(2 weeks: learned python / 1 week: project)  
+I thought that using tkinter and turtle library that we learned in the class was not efficient to our project.  
+So I searched and I found the pygame.  
+The team suggested an idea that it would be awesome if we make some characters. So I made some characters and stroylines.  
+
+AngelPlayer can win if he meets the god in the space travle.  
+TravlerPlayer can win if he gets 4 lands located in Korea.  
+FStudentPlayer can win if he graduates from university by visiting university building or if he wins the lotto.  
+RichPlayer can win if he has so many lands or monopolize of lands in any 1 line.  
+
+
+## Picture
+
+![pygame](https://user-images.githubusercontent.com/59651691/106263642-fcf4fe80-6267-11eb-8c37-5200877e701f.jpg)
+![pygame1](https://user-images.githubusercontent.com/59651691/106263644-fe262b80-6267-11eb-9aa7-79d5a05f5fc2.jpg)
+![pygame2](https://user-images.githubusercontent.com/59651691/106263634-fb2b3b00-6267-11eb-94bb-1d61259aaadd.jpg)
+![pygame3](https://user-images.githubusercontent.com/59651691/106263641-fc5c6800-6267-11eb-85d0-2f84572b5350.jpg)
